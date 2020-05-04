@@ -65,3 +65,40 @@ utf -8  사용하는 이유
 
 피코세컨드??
 
+# HTML
+
+1. DOM(Document Object Model)
+- 텍스트 형식의 웹 문서파일을 브라우저가 로드 후 파싱하여 이해 할 수 있는 구조로 적재
+- javaScript로 동적변경이 가능
+  - document node : 트리의 최상위 텍스트 노드에 접근하려면 document 를 통해야 한다/ 시작점이라 생각하면 됨
+  - element node : 요소 노드 HTMl 을 표현함 [html],[head],[body],[div] 등등
+  - atribute node :
+  - text node : 텍스트 노드는 요소 노드의 자식, DOM tree의 최종단
+  
+2. 
+
+```html
+<! doctype HTML>
+<html>
+	<head>
+	<title>junpil</title>
+	<meta charset = "UTF-8" />
+	</head>
+	<body>
+		<h1>hello html</h1>
+		<input type = "text" id = "username" />     # type 지정 , id 이름 만들어 주기
+		<input type = "text" id = "userage" />      
+		<button onclick = "textname()">보여주기</button>
+		<button onmouseover = "textage()">나이</button>
+	</body>
+	<script>
+		function textname(){
+			alert(document.getElementById("username").value); 
+		}
+		function textage(){
+			alert(document.getElementById("userage").value);
+		}
+	</script>
+
+</html>
+```
