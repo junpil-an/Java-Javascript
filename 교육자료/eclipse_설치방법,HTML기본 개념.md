@@ -88,12 +88,12 @@ utf -8  사용하는 이유
 		<h1>hello html</h1>
 		<input type = "text" id = "username" />     # type 지정 , id 이름 만들어 주기
 		<input type = "text" id = "userage" />      
-		<button onclick = "textname()">보여주기</button>
+		<button onclick = "textname()">보여주기</button>  #`on`으로 보여주기를 click 하면 textname함수를 사용해서 id를 출력하겠다
 		<button onmouseover = "textage()">나이</button>
 	</body>
-	<script>
+	<script>   #script javascript를 사용하겠다
 		function textname(){
-			alert(document.getElementById("username").value); 
+			alert(document.getElementById("username").value);   
 		}
 		function textage(){
 			alert(document.getElementById("userage").value);
