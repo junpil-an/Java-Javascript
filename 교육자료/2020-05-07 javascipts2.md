@@ -111,7 +111,7 @@ document.body.appendChild( jp );
 - jp를 body의 자식 요소로 넣는다
 ![사진](./img/.PNG)
 
-
+```html
 <! DOCTYPE html>
 <html>
 
@@ -203,3 +203,4 @@ document.body.appendChild( jp );
 	
 	</script>
 </html>
+```
