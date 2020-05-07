@@ -100,4 +100,4 @@ var Sum = calSum(parseInt(jKor.value),parseInt(jEng.value),parseInt(jSci.value))
   jp.appendChild(jptext);  -> jp 에 jptext 추가 
 </script>
 ```
-![사진](./img/2020-05-07.PNG)
+![사진](./img/.PNG)
