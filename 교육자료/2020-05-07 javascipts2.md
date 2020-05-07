@@ -112,4 +112,94 @@ document.body.appendChild( jp );
 ![사진](./img/.PNG)
 
 
+<! DOCTYPE html>
+<html>
 
+<head>
+	<meta charset="UTF-8">
+	<title>score table</title>
+</head>
+
+<body>
+	<h1>학생 점수 입력</h1>
+	<input type= "text" name = "info" placeholder= "학생이름" />
+	<input type= "text" name = "info" placeholder= "국어점수" />
+	<input type= "text" name = "info" placeholder= "영어점수" />
+	<input type= "text" name = "info" placeholder= "과학점수" />
+	<button class= "btn" onClick = "input()">입력</button>
+	<button class= "btn" onClick = "result()">결과</button>
+</body>
+	<script>
+	var num= 0;
+	
+	function input(){
+		var jinfo = document.getElementsByName("info"); //value 값을 출력하지 않고 list값 [0]을 출력한다
+		var Sum = calSum(jinfo,1); 
+		var Avg = calTot(jinfo,jinfo.length-1);
+		num = num + 1;  //var로 새롭게 변수 만들 필요 x 
+		
+		createObject("br");
+		createObject("input","text","number",num);
+		createObject("input","text","학생이름",jinfo[0].value);  
+		createObject("input","text","국어점수",jinfo[1].value);
+		createObject("input","text","영어점수",jinfo[2].value);
+		createObject("input","text","과학점수",jinfo[3].value);
+		createObject("input","text","합계",Sum);
+		createObject("input","text","평균",Avg);
+		
+		for (i=0;i<jinfo.length;i++){
+			clearValue(jinfo[i]);
+			//alert(jinfo[i])
+		}
+	}
+	//calSum 3변수의 합
+	function calSum(a,start){
+		sum=0;
+		for (i=start;i<a.length;i++){
+			sum = sum+ parseInt(a[i].value);
+		}
+		return sum;	
+	}
+	//calTot 합/3
+	function calTot(a,b){
+		
+		return calSum(a,1)/(b);
+	}
+	
+	//createObject 태그이름,타임,이름,값 지정
+	function createObject(tagName,type,name,value){
+		var obj = document.createElement(tagName);
+		obj.type = type;
+		obj.name = name;
+		obj.value = value;
+		document.body.appendChild(obj);
+	}
+
+	function clearValue(a){ 
+		a.value=""; 
+	}
+	
+	function result(){
+		//선 긋기
+		createObject("hr");
+		createObject("hr");
+		//결과값 연산
+		var kor = document.getElementsByName("국어점수")
+		var eng = document.getElementsByName("영어점수")
+		var sci = document.getElementsByName("과학점수")
+		var tot = document.getElementsByName("합계")
+		var avg = document.getElementsByName("평균")
+		//HTML 개체 생성
+		
+		createObject("input","text","","")
+		createObject("input","text","","")
+		createObject("input","text","kor",calSum(kor,0,length))
+		createObject("input","text","eng",calSum(eng,0,length))
+		createObject("input","text","sci",calSum(sci,0,length))
+		createObject("input","text","tot",calSum(tot,0,length))
+		createObject("input","text","avg",calTot(avg,jinfo.length))
+	}
+	
+	
+	</script>
+</html>
