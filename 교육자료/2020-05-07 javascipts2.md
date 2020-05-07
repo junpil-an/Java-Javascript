@@ -101,7 +101,7 @@ var jp = document.createElement('button');
 var jptext = document.createTextNode('click);
 ```
 - 클릭이라는 문구 노드를 생성
-```html
+```javascript
   jp.appendChild(jptext); 
 ```
 - -> jp 에 jptext 추가
