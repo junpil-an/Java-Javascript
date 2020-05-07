@@ -98,6 +98,6 @@ var Sum = calSum(parseInt(jKor.value),parseInt(jEng.value),parseInt(jSci.value))
   var jp = document.createElement('button'); ->새로운 요소를 만들어줌
   var jptext = document.createTextNode('click) ; -> 클릭이라는 문구 노드를 생성
   jp.appendChild(jptext);  -> jp 에 jptext 추가 
-
 </script>
+```
 
