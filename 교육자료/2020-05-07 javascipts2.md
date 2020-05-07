@@ -90,14 +90,26 @@ var Sum = calSum(parseInt(jKor.value),parseInt(jEng.value),parseInt(jSci.value))
 .createElement('h1')
 <h1></h1>  -> 출력
 
-.createTextNode('My Text')  -> 선택한 요소에 텍스트를 추가
+.createTextNode('My Text')
 ```
-
+- 선택한 요소에 텍스트를 추가
 ```html
-<script>
-  var jp = document.createElement('button'); ->새로운 요소를 만들어줌
-  var jptext = document.createTextNode('click) ; -> 클릭이라는 문구 노드를 생성
-  jp.appendChild(jptext);  -> jp 에 jptext 추가 
-</script>
+var jp = document.createElement('button');
 ```
+- 새로운 요소를 만들어줌
+```html
+var jptext = document.createTextNode('click);
+```
+- 클릭이라는 문구 노드를 생성
+```html
+  jp.appendChild(jptext); 
+```
+- -> jp 에 jptext 추가
+```html
+document.body.appendChild( jp );
+```
+- jp를 body의 자식 요소로 넣는다
 ![사진](./img/.PNG)
+
+
+
