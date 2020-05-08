@@ -54,4 +54,8 @@ cmd가 켜져 있으면 껐다가 다시 실행
 경로 설정 해주기
 
 ## javascript 교육
-[javascript](./교육자료)
+
+#### [javascript](./교육자료)
+- javascript 교육자료
+
+#### [Java](./교육자료)
