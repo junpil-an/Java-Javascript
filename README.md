@@ -9,7 +9,6 @@ Oracle Database 11g Release 2 Express Edition for Windows 64 맨아래 ee 버전
 
 oracle 로그인 후 다운
 
-
 oracle 비번 Jpi4371998
 
 java SE 8u251 -> Java SE 8u251 -> 맨 밑으로 내려서 window 64
@@ -21,6 +20,12 @@ jre dev\JAVA\JRE
 
 
 환경변수 설정
+
+JAVA_HOME 변수 생성 D:\dev\JAVA\JDK
+
+path 경로 지정 %JAVA_HOME%\bin;
+
+
 
 ##    이클립스 설치방법
 
