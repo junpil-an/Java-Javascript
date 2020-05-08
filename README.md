@@ -53,4 +53,4 @@ cmd가 켜져 있으면 껐다가 다시 실행
 1번째 경로는  
 경로 설정 해주기
 
-[javascript](./JAVA)
+[javascript](./교육자료)
