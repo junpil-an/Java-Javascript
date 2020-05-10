@@ -63,4 +63,4 @@ cmd가 켜져 있으면 껐다가 다시 실행
 #### [javascript](./교육자료)
 - javascript 교육자료
 
-#### [Java](./JAVA)
+#### [Java](./java)
