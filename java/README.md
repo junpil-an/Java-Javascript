@@ -24,6 +24,6 @@
   - 2.랜덤함수
   - 3.최대값
   - 4.switch case
-  - icia cafe 만들기
-  - cafe test 심화
-  - for 
+  - 5.icia cafe 만들기
+  - 6.cafe test 심화
+  - 7.for 
