@@ -1,3 +1,11 @@
+
+#### [javascript](./교육자료)
+- javascript 교육자료
+
+#### [Java](./java)
+- java 교육자료
+
+
 ##     oracle 설치방법
 
 Database 19c Enterprise/Standard Editions 사이트 이동
@@ -60,7 +68,3 @@ cmd가 켜져 있으면 껐다가 다시 실행
 
 ## javascript 교육
 
-#### [javascript](./교육자료)
-- javascript 교육자료
-
-#### [Java](./java)
